@@ -10,7 +10,7 @@ let word;
 let arr = [];
 async function grabmorse() {
     arr = [];
-    fetch("https://random-word-api.herokuapp.com/word")
+    fetch("https://random-word-api.vercel.app/api?words=1")
     .then(res => res.json())
     .then(data => {
         word = data[0]
